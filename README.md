@@ -42,8 +42,8 @@ Every official build is digitally signed. Each time it starts, Extra Dim checks 
 If even one byte has changed (a virus that infects programs, a modified copy, a damaged download), it
 refuses to run and points you to the original.
 
-**Only download Extra Dim from this page or the Google Drive link above.** No check built into an app can stop a fake app that just uses the same name, so this page
-is the one trustworthy source.
+**Only download Extra Dim from this page or the Google Drive link above.** No check built into an app can stop a fake app that just uses the same name, so these two
+links are the only trustworthy sources.
 
 ## Build it yourself
 
