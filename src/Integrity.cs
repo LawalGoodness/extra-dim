@@ -69,7 +69,7 @@ namespace ExtraDim
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             TopMost = true;
-            ClientSize = new Size(Theme.Px(440), Theme.Px(340));
+            ClientSize = new Size(Theme.Px(440), Theme.Px(352));
             BackColor = Bg;
             ForeColor = Fg;
             Font = new Font("Segoe UI", 9.75f);
@@ -115,7 +115,19 @@ namespace ExtraDim
                 Location = new Point(Theme.Px(22), Theme.Px(290)), Size = new Size(Theme.Px(400), Theme.Px(36))
             };
 
-            Controls.AddRange(new Control[] { badge, title, body, get, close, tip });
+            // Quiet source link in the bottom-right corner; brightens on hover, opens the GitHub repo.
+            var faint = Color.FromArgb(0x4E, 0x49, 0x78);
+            var repo = new Label
+            {
+                Text = "github.com/LawalGoodness/extra-dim", ForeColor = faint, Font = new Font("Segoe UI", 7f),
+                TextAlign = ContentAlignment.MiddleRight, Cursor = Cursors.Hand,
+                Location = new Point(Theme.Px(200), Theme.Px(330)), Size = new Size(Theme.Px(226), Theme.Px(16))
+            };
+            repo.MouseEnter += (s, e) => repo.ForeColor = Muted;
+            repo.MouseLeave += (s, e) => repo.ForeColor = faint;
+            repo.Click += (s, e) => { try { System.Diagnostics.Process.Start(BuildInfo.RepoUrl); } catch { } };
+
+            Controls.AddRange(new Control[] { badge, title, body, get, close, tip, repo });
             AcceptButton = get;
             CancelButton = close;
             ResumeLayout(false);

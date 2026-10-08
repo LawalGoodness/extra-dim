@@ -27,7 +27,7 @@ if ($LASTEXITCODE) { throw 'Could not prepare the signing key' }
 $linkFile = Join-Path $root 'download-link.txt'
 $link = if (Test-Path $linkFile) { (Get-Content $linkFile -Raw).Trim() } else { '' }
 if ($link -notmatch '^https://') { $link = 'https://github.com/LawalGoodness' }
-"namespace ExtraDim { static class BuildInfo { public const string DownloadUrl = `"$($link.Replace('"',''))`"; } }" |
+"namespace ExtraDim { static class BuildInfo { public const string DownloadUrl = `"$($link.Replace('"',''))`"; public const string RepoUrl = `"https://github.com/LawalGoodness/extra-dim`"; } }" |
     Set-Content "$build\BuildInfo.cs" -Encoding ascii
 
 & $csc /nologo /target:winexe /optimize+ /out:"$dist\ExtraDim.exe" `

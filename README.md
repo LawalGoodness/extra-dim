@@ -6,17 +6,18 @@
 A tiny, offline app with a floating moon bubble to switch it on and off.</p>
 
 <p align="center"><a href="https://github.com/LawalGoodness/extra-dim/releases/latest"><b>⬇ Download the latest version</b></a></p>
+<p align="center"><sub>or from <a href="https://drive.google.com/file/d/11R0qiEpG4DOZplvojKykBGNhu2qfZQPk/view?usp=sharing">Google Drive</a></sub></p>
 
 ---
 
 ## Download and run
 
-1. Open the [latest release](https://github.com/LawalGoodness/extra-dim/releases/latest) and download **`ExtraDim.exe`**.
+1. Open the [latest release](https://github.com/LawalGoodness/extra-dim/releases/latest) (or the [Google Drive copy](https://drive.google.com/file/d/11R0qiEpG4DOZplvojKykBGNhu2qfZQPk/view?usp=sharing)) and download **`ExtraDim.exe`**.
 2. Double-click it. There is nothing to install.
 3. The first time, Windows may say *"Windows protected your PC"*, because the app isn't signed with a paid
    certificate. Click **More info → Run anyway**.
 
-It works on Windows 10 and 11 and never uses the internet. The only exception is the "Get the original" button in the tamper warning, which opens this page in your browser.
+It works on Windows 10 and 11 and never uses the internet. The only exception is the "Get the original" button in the tamper warning, which opens the official download in your browser.
 
 ## Using it
 
@@ -39,9 +40,9 @@ It works on Windows 10 and 11 and never uses the internet. The only exception is
 
 Every official build is digitally signed. Each time it starts, Extra Dim checks itself against that signature.
 If even one byte has changed (a virus that infects programs, a modified copy, a damaged download), it
-refuses to run and points you back here for the original.
+refuses to run and points you to the original.
 
-**Only download Extra Dim from this page.** No check built into an app can stop a fake app that just uses the same name, so this page
+**Only download Extra Dim from this page or the Google Drive link above.** No check built into an app can stop a fake app that just uses the same name, so this page
 is the one trustworthy source.
 
 ## Build it yourself
